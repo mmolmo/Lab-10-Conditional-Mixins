@@ -1,6 +1,7 @@
-@import 'variables';
 @mixin mobile-grid {
-
+  $grid-count:26;
+  $color: #24c83a;
+  $borderdepth:25px;
   .grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 2fr;
@@ -15,10 +16,11 @@
         grid-column: 3;
         //color multiples by the list item. tints over time
         background-color: 	rgb(($i1*3), $i1, (($i1+10)*2));
-        border: 1px solid rgba(0, 0, 0, 0.8);
+        border: $borderdepth solid rgba(0, 0, 0, 0.8);
         padding: 10px;
         font-size: ($i1+14px);
-        color:invert(rgb(($i1*3), $i1, (($i1+10)*2)));
+        //color:invert(rgb(($i1*3), $i1, (($i1+10)*2)));
+        color: #c82424;
       }
     }
 
@@ -30,7 +32,8 @@
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 10px;
         font-size: ($i1+14px);
-        color:invert(rgb((($i1+10)*2), $i1, ($i1*3)));
+        color: #603232;
+        //color:invert(rgb((($i1+10)*2), $i1, ($i1*3)));
       }
 
     }
