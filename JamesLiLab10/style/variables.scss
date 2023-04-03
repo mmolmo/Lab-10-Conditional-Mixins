@@ -1,0 +1,10 @@
+/*number of items in the grid*/
+$grid-count:12;
+/*colors*/
+$backgroundcolor: rgb(204, 179, 179);
+$backgroundcoloralt: rgb(213, 95, 27);
+$textcolormain: complement(invert($backgroundcolor));
+$textcoloralt: complement(invert($backgroundcoloralt));
+/*text sizes*/
+$h2size:20px;
+$headsize:50px;

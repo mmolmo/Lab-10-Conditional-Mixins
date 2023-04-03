@@ -1,0 +1,55 @@
+/*display format for header*/
+@mixin header{
+  background-color: $backgroundcolor;
+  h1{
+    color: $textcolormain;
+    text-align: center;
+    font-size: $headsize;
+  }
+  h2{
+    text-align: center;
+    font-size: $h2size;   
+    color: $textcoloralt;
+  }
+}
+@mixin grid{
+  /*display format for grid*/
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: $backgroundcolor;
+    grid-gap: 10px;
+  }
+  /*display format for grid-item*/
+  .grid-item{
+    padding: 10px;
+    text-align: center;
+    font-size: $headsize;
+    grid-row: auto;
+  }
+  /*for conditional for all grid items 1-12*/
+  @for $i1 from 1 through $grid-count{
+    /*numbers divisible by 3 will be put into column 3, + color formatting*/
+    @if $i1 % 3 == 0{
+      .n#{$i1} {
+        grid-column: 3;
+        background-color: complement($backgroundcoloralt);
+        color:$textcolormain;
+      }
+    /*numbers divisible by 2 will be put into column 2, + color formatting*/
+    }@else if $i1 % 2 == 0{
+      .n#{$i1} {
+        grid-column: 2;
+        background-color:	$backgroundcoloralt;
+        color: invert($textcolormain);
+      }
+    /*all other numbers will be put into column 1, + color formatting*/
+    }@else{
+      .n#{$i1} {
+        grid-column: 1;
+        background-color:	invert($backgroundcolor);
+        color:$textcoloralt;
+      }
+    } 
+  }
+}

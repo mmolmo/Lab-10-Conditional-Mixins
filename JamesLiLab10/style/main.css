@@ -1,0 +1,125 @@
+/*display format for header*/ /*number of items in the grid*/
+/*colors*/
+/*text sizes*/
+/*display format for grid*/
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(204, 179, 179);
+  grid-gap: 10px;
+}
+
+/*display format for grid-item*/
+.grid-item {
+  padding: 10px;
+  text-align: center;
+  font-size: 50px;
+  grid-row: auto;
+}
+
+/*for conditional for all grid items 1-12*/
+/*numbers divisible by 3 will be put into column 3, + color formatting*/
+.n1 {
+  grid-column: 1;
+  background-color: #334c4c;
+  color: #e46e2a;
+}
+
+/*numbers divisible by 3 will be put into column 3, + color formatting*/
+.n2 {
+  grid-column: 2;
+  background-color: rgb(213, 95, 27);
+  color: #b3cccc;
+}
+
+/*all other numbers will be put into column 1, + color formatting*/
+/*numbers divisible by 3 will be put into column 3, + color formatting*/
+.n3 {
+  grid-column: 3;
+  background-color: #1b91d5;
+  color: #4c3333;
+}
+
+/*numbers divisible by 2 will be put into column 2, + color formatting*/
+/*numbers divisible by 3 will be put into column 3, + color formatting*/
+.n4 {
+  grid-column: 2;
+  background-color: rgb(213, 95, 27);
+  color: #b3cccc;
+}
+
+/*all other numbers will be put into column 1, + color formatting*/
+/*numbers divisible by 3 will be put into column 3, + color formatting*/
+.n5 {
+  grid-column: 1;
+  background-color: #334c4c;
+  color: #e46e2a;
+}
+
+/*numbers divisible by 3 will be put into column 3, + color formatting*/
+.n6 {
+  grid-column: 3;
+  background-color: #1b91d5;
+  color: #4c3333;
+}
+
+/*numbers divisible by 2 will be put into column 2, + color formatting*/
+/*numbers divisible by 3 will be put into column 3, + color formatting*/
+.n7 {
+  grid-column: 1;
+  background-color: #334c4c;
+  color: #e46e2a;
+}
+
+/*numbers divisible by 3 will be put into column 3, + color formatting*/
+.n8 {
+  grid-column: 2;
+  background-color: rgb(213, 95, 27);
+  color: #b3cccc;
+}
+
+/*all other numbers will be put into column 1, + color formatting*/
+/*numbers divisible by 3 will be put into column 3, + color formatting*/
+.n9 {
+  grid-column: 3;
+  background-color: #1b91d5;
+  color: #4c3333;
+}
+
+/*numbers divisible by 2 will be put into column 2, + color formatting*/
+/*numbers divisible by 3 will be put into column 3, + color formatting*/
+.n10 {
+  grid-column: 2;
+  background-color: rgb(213, 95, 27);
+  color: #b3cccc;
+}
+
+/*all other numbers will be put into column 1, + color formatting*/
+/*numbers divisible by 3 will be put into column 3, + color formatting*/
+.n11 {
+  grid-column: 1;
+  background-color: #334c4c;
+  color: #e46e2a;
+}
+
+/*numbers divisible by 3 will be put into column 3, + color formatting*/
+.n12 {
+  grid-column: 3;
+  background-color: #1b91d5;
+  color: #4c3333;
+}
+
+/*numbers divisible by 2 will be put into column 2, + color formatting*/
+.header {
+  background-color: rgb(204, 179, 179);
+}
+.header h1 {
+  color: #4c3333;
+  text-align: center;
+  font-size: 50px;
+}
+.header h2 {
+  text-align: center;
+  font-size: 20px;
+  color: #e46e2a;
+}/*# sourceMappingURL=main.css.map */
