@@ -7,6 +7,7 @@
   grid-template-columns: auto auto auto;
   background-color: rgb(204, 179, 179);
   grid-gap: 10px;
+  transition: 1s ease-in-out;
 }
 
 /*display format for grid-item*/
@@ -15,6 +16,14 @@
   text-align: center;
   font-size: 50px;
   grid-row: auto;
+  border-radius: 15px;
+  transition: 1s ease-in-out;
+}
+
+.grid-item :hover {
+  transition: 1s ease-in-out;
+  transform: scale(1, 1.1);
+  font-size: 110%;
 }
 
 /*for conditional for all grid items 1-12*/

@@ -19,6 +19,7 @@
     grid-template-columns: auto auto auto;
     background-color: $backgroundcolor;
     grid-gap: 10px;
+    transition: 1s ease-in-out;
   }
   /*display format for grid-item*/
   .grid-item{
@@ -26,6 +27,13 @@
     text-align: center;
     font-size: $headsize;
     grid-row: auto;
+    border-radius: 15px;
+    transition: 1s ease-in-out;
+  }
+  .grid-item :hover{
+    transition: 1s ease-in-out;
+    transform: scale(1,1.1);
+    font-size: 110%;
   }
   /*for conditional for all grid items 1-12*/
   @for $i1 from 1 through $grid-count{
